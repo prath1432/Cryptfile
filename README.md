@@ -1,47 +1,53 @@
-Overview
-CRYPTFILE is a secure and user-friendly utility designed for encrypting and decrypting files using robust cryptographic algorithms such as AES (Advanced Encryption Standard) and DES (Data Encryption Standard). The tool ensures data confidentiality by offering flexible decryption options via password or secret key and automatically logs all operations for complete traceability.
+CRYPTFILE: File Encryption and Decryption Utility
 
-Key Features
+CRYPTFILE is a secure and user-friendly utility for encrypting and decrypting files using robust cryptographic algorithms such as AES (Advanced Encryption Standard) and DES (Data Encryption Standard). The tool offers flexible decryption options via password or secret key, ensuring data confidentiality and accessibility. It automatically generates encrypted files alongside a secret key and keeps a comprehensive log of all operations for security auditing.
 
-1) File Encryption and Decryption
+Key Features:
 
-2) Automatic Folder Creation
+1. File Encryption and Decryption:
 
-3) Encryption Algorithms
-   
- i) AES
- ii) DES
+Supports encryption and decryption of various file types, including documents and images.
 
-4) Decryption options
+Provides flexibility by allowing decryption with either a secret key or password.
 
- i) Password
- ii) Secret Key
+2. Automatic Folder Creation:
 
-5) Log File Generation
+Each encryption creates a folder containing the encrypted file and a human-readable secret key for easy decryption.
 
-Installation
+3. Encryption Algorithms:
 
-1) Clone this repository:
+AES: Provides strong encryption with key sizes of 128, 192, or 256 bits.
 
-git clone https://github.com/<your-repo-name>/CRYPTFILE.git
+DES: Offers basic encryption with a 56-bit key for simplicity and compatibility.
 
-2)Navigate to the project directory:
+4. Decryption Options:
 
-cd CRYPTFILE
+Password: Users can set a password for additional security.
 
-3)Install required dependencies:
+Secret Key: Allows decryption using a generated secret key stored securely in the folder.
 
-pip install -r requirements.txt
+5. Log File Generation:
 
-Usage
+Logs all encryption and decryption operations, including file names, algorithms used, and timestamps, for complete traceability.
 
-Run the tool:
+Example Use Cases:
 
-python cryptfile.py
+1. Encrypting a DOCX File Using AES:
 
+Encryption: A DOCX file is encrypted with AES using the password "PasswoRd123," and a folder is created containing the encrypted file and secret key.
 
-License
-This project is licensed under the MIT License.
+Decryption: The file is decrypted using the secret key, and the original DOCX file is restored.
 
-Contribution
-Contributions are welcome! Feel free to fork this repository, create a feature branch, and submit a pull request.
+Log Entry: Detailed log includes file name, algorithm used, and timestamps.
+
+2. Encrypting a JPG File Using DES:
+
+Encryption: A JPG file is encrypted with DES using the password "qwerty," with a folder created containing the encrypted file and secret key.
+
+Decryption: The file is decrypted using the Password "qwerty", and the original image is restored.
+
+Log Entry: Logs include file name, algorithm used, and timestamps.
+
+3. Log File Summary:
+
+A complete log of operations, including timestamps, file types, encryption algorithms, and decryption methods, ensures easy auditing and traceability of all encryption activities
