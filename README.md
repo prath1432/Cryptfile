@@ -49,25 +49,6 @@
 5. **Log File Generation**  
    - Maintains detailed logs of all encryption and decryption operations, including file names, algorithms used, and timestamps, for security auditing.
 
-## Example Use Cases
-
-### 1. Encrypting a DOCX File Using AES
-- **Encryption**: A DOCX file is encrypted with AES using the password `PasswoRd123`. A folder is created containing the encrypted file and the secret key.  
-- **Decryption**: The file is decrypted using the secret key, restoring the original DOCX file.  
-- **Log Entry**: The log includes the file name, algorithm used, and timestamps.
-
-### 2. Encrypting a JPG File Using DES
-- **Encryption**: A JPG file is encrypted with DES using the password `qwerty`. A folder is created containing the encrypted file and the secret key.  
-- **Decryption**: The file is decrypted using the password `qwerty`, restoring the original image.  
-- **Log Entry**: The log includes the file name, algorithm used, and timestamps.
-
-### 3. Log File Summary
-- Provides a detailed record of operations, including:  
-  - Timestamps  
-  - File types  
-  - Encryption algorithms  
-  - Decryption methods  
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
