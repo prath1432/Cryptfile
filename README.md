@@ -8,7 +8,7 @@
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/<your-repo-name>/CRYPTFILE.git
+   git clone https://github.com/prath1432/CRYPTFILE.git
    ```
 2. Navigate to the project directory:  
    ```bash
