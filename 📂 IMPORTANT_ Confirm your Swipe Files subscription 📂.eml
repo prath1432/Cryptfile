@@ -1,0 +1,270 @@
+Delivered-To: prathmeshsalunke758@gmail.com
+Received: by 2002:a05:6a11:fb22:b0:5e9:3c43:c908 with SMTP id id34csp4030658pxc;
+        Fri, 25 Apr 2025 01:27:27 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFpQali5tz/ooJwHc1Rv5v3HqEYVZAqyjGp5rJlOp5w0KyTHDnyYdQk43H3aG+x/aSxF5UR
+X-Received: by 2002:a05:6214:e66:b0:6e8:fcc6:35b6 with SMTP id 6a1803df08f44-6f4cb99d412mr25315486d6.2.1745569646988;
+        Fri, 25 Apr 2025 01:27:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1745569646; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Aa1DQ4RkNwfq6iHCzww8x7LtagLTB6fcN/Urib9t7Su1fOJc6acn6oVlq8mRzvy65Y
+         XOvBtBRM10VLSBpaNNA0bP5w/HhHsOfIQMu44ljpvyWHdnrZoE0JPm8Srm72nr43rAnb
+         im7xIwmnhrufuRCzWkr6veyqk05WG6WHonSBQw0UW3pLxRrXpowe4UDu32MFPfmKPi7i
+         7yTtfF2nou9sgd6FfDFm9466EnrrSPexbKLkphhAwBz2jdhkK+UQ0bKEwoQ++VfrpV0e
+         yBAdtxkWItMCT7wQLFi5sLZdgXLFGlhfqiMeMgOmMPyi4Efk2qz8n0rF7uix8DsO0ywZ
+         ue/w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:precedence:list-unsubscribe-post:list-unsubscribe:feedback-id
+         :subject:message-id:mime-version:from:date:dkim-signature
+         :dkim-signature;
+        bh=/1plh3hLruYCcvIFZwJvIRSIb7BbtUPYUoJ1pU3uOq4=;
+        fh=ZYDcQo/Jnlj6HYdUzUiRriwLmyJe6KeKHcDUmMEK+v4=;
+        b=TWLnbsRHA+TtcoRjBR+DKWgcR/z5p9GL16WAbvZa47aVNSHZLQKoQFO5mRlPdbFAi6
+         tVEv1H5wEmvy0cPzF2OLr/eyhVTkj6Jlu4M9DOztvFjIhT03IgIRaAg770K5lWFn4WpY
+         B8llxTRdrTE7gF2vcN+VR6m4DnOOlUQ8b8hBIA4GNJfv0NU5Qkr/paw1yHQIRWYnPo77
+         62EzWgQxKmC+A2/3H+i6V3diTiBSVkZR/AkZ4NEm2v6IbgHu41GEZ6Tdfor0AjDPzrwc
+         KUmPh4DgEDeUjm3BdZ1Y6iNxTtgFdvEsFmbJoZ9Ck6RTmFYUoE/3zIPxpM32CmW4veCh
+         HZOQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@swipefiles.com header.s=cka header.b=KNn5q21w;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=taogaEVd;
+       spf=pass (google.com: domain of bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com designates 167.89.29.250 as permitted sender) smtp.mailfrom="bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=swipefiles.com
+Return-Path: <bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com>
+Received: from o12.ck.m.convertkit.com (o12.ck.m.convertkit.com. [167.89.29.250])
+        by mx.google.com with ESMTPS id d75a77b69052e-47ea24b2662si35095981cf.527.2025.04.25.01.27.26
+        for <prathmeshsalunke758@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 25 Apr 2025 01:27:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com designates 167.89.29.250 as permitted sender) client-ip=167.89.29.250;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@swipefiles.com header.s=cka header.b=KNn5q21w;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=taogaEVd;
+       spf=pass (google.com: domain of bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com designates 167.89.29.250 as permitted sender) smtp.mailfrom="bounces+10235570-8391-prathmeshsalunke758=gmail.com@ckespa.swipefiles.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=swipefiles.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=swipefiles.com;
+	h=content-type:from:mime-version:subject:feedback-id:list-unsubscribe:
+	list-unsubscribe-post:to:cc:content-type:feedback-id:from:subject:to;
+	s=cka; bh=/1plh3hLruYCcvIFZwJvIRSIb7BbtUPYUoJ1pU3uOq4=;
+	b=KNn5q21wrrBSRH7hfSToB0A0TROoKISGySGHoAi6u572CdLr4NOMQFudqBYk3R4U+zds
+	x4SPiGJxLj0cqYwA4eTjYIyAzbmbNAljkJ1B3Z0LgeBz32udVmXSpKaZWmjHCCUBPjMK2/
+	2t73z+S2KGrpY+LFZWHrUsRIwS2ovKweA=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:subject:feedback-id:list-unsubscribe:
+	list-unsubscribe-post:to:cc:content-type:feedback-id:from:subject:to;
+	s=smtpapi; bh=/1plh3hLruYCcvIFZwJvIRSIb7BbtUPYUoJ1pU3uOq4=;
+	b=taogaEVdMHgQpNyMWZtTwhIkLKz+EdaRYQE52dFSa4St8KqLyOMb9DyITSofhaWMK3DA
+	8a3bMDRI8w2zzCdYcwZqh0GHu9DZzViI0T6tjSIgo8TVfgfLk/mhaMvUU1Jo0uKK1j8xyt
+	7fAmYfXOMzRdcp3BRgMmwFVuwwjVg2YBQ=
+Received: by recvd-6984b68b7b-sdbnw with SMTP id recvd-6984b68b7b-sdbnw-1-680B476E-1D
+	2025-04-25 08:27:26.371948493 +0000 UTC m=+1419555.996178448
+Received: from MTAyMzU1NzA (unknown)
+	by geopod-ismtpd-31 (SG) with HTTP
+	id Am2OcQipQyGH4UwtE59-rQ
+	Fri, 25 Apr 2025 08:27:26.335 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=341137214ea227f2acdb0ee0f7cd3ab5654987e912244be1f90291d54eaf
+Date: Fri, 25 Apr 2025 08:27:26 +0000 (UTC)
+From: Corey Haines | Swipe Files <corey@swipefiles.com>
+Mime-Version: 1.0
+Message-ID: <5quqxwzvvlu8uvpzlnnb6h95qqv44in@convertkit-mail.com>
+Subject: =?UTF-8?B?8J+Tgg==?= IMPORTANT: Confirm your Swipe Files subscription
+ =?UTF-8?B?8J+Tgg==?=
+Feedback-ID: 8038706:141644:emailtemplate:CK
+List-Unsubscribe: 
+ <mailto:unsub+5quqxwzvvlu8uvpzlnnb6h95qqv44in@convertkit-mail.com>,
+ <https://unsubscribe.kit.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Precedence: bulk
+X-Report-Abuse: <abuse@convertkit.com>
+X-Report-Spam: <abuse@convertkit.com>
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EH7AgEOpb9hbzNKl=2Fr=2FEb0=2F=2FdQH+uMobA=2F=2F8mBvsXQDqvlkGTRHz0NC3nc?=
+ =?us-ascii?Q?37ndkJGKotogCTanXvHbVjHcgpGGMdL5HlWxZsl?=
+ =?us-ascii?Q?KLGQCg6i7HGdfgs7BeCj6DvKFIPgluFqZjrSJmb?=
+ =?us-ascii?Q?jmwuQnhIh=2FGb2KuSHO=2FttN0SLv9uYslZFgVzAS3?=
+ =?us-ascii?Q?MhRt0PviNGKl1n7dEvPVlSZkK0sg=2FiGhpELRACr?=
+ =?us-ascii?Q?RkXk4TF+FuDwe92zUcRTUYFI3Dxhk2O8SrvssVf?=
+ =?us-ascii?Q?sGlJM5NTd0Yb5xcAmcTRrSui4g=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprBTLquV1ImzFIrgT?=
+ =?us-ascii?Q?SaJ3+RZNzPyBw+MohC2hKN16pZiR+LwO6GFsWZw?=
+ =?us-ascii?Q?8MbHMw=2F3UEbDVbQCNyGVHSP0nFBszPa9BZfo2=2Fy?=
+ =?us-ascii?Q?1QjNzKmA5BBRHUEehHpYl8Rg7vtOPcgV63yi6iL?=
+ =?us-ascii?Q?FhcfCBrOAO7i9cK6JPEXUWQTlDT03Kg6pgIajhz?=
+ =?us-ascii?Q?yFkzFd0+tZuyeUXt9cbIUL7LIn6vryDkgumeaBw?=
+ =?us-ascii?Q?m2ykim6Qn4xLXS4IpGN5JTuhfu5Blw+KFzATZde?=
+ =?us-ascii?Q?cVGN2OzOnGfMWtLtJLX+x6eday1y3XMWlfQyjcw?=
+ =?us-ascii?Q?Akpn0=2FfOKQuTZzCnSK=2FDEgNbfv4IPz+jaHXe5an?=
+ =?us-ascii?Q?8QpW5ji85pTY0HllEBm4iNL8IjkwBCJn0QfmECj?=
+ =?us-ascii?Q?ZVJpUCqvrdaZKzy=2FKQQ=3D?=
+To: prathmeshsalunke758@gmail.com
+X-Entity-ID: u001.FMbUEocbOiCdbK9paTwfCg==
+
+--341137214ea227f2acdb0ee0f7cd3ab5654987e912244be1f90291d54eaf
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+You subscribed to Swipe Files Newsletter based on a
+recommendation from Frich. Thanks for joining!
+
+We won't email you unless you click=E2=80=8Bthis button=E2=80=8B (
+https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/9qhpxxp5s=
+nhp7gopp9f9/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vc3Vic2NyaWJlZD9zcGFya2xvb3A=
+=3D
+) and confirm:
+
+-->Confirm Your Subscription (
+https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/9qhpxxp5s=
+nhp7gopp9f9/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vc3Vic2NyaWJlZD9zcGFya2xvb3A=
+=3D
+)
+Confirm Your Subscription (
+https://www.swipefiles.com/subscribed?sparkloop )We're excited to
+have you join the 25,000 SaaS founders and marketers receiving
+actionable marketing advice.
+
+We just want to 100% ensure you want to receive our emails.
+
+=E2=80=94Corey Haines
+
+If you don't want emails like this anymore, choose what you
+receive here (
+https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/m2h7h5h8r=
+od88whm/aHR0cHM6Ly9zbWFydHN1YnNjcmliZXIuYXBwL3NlbGVjdC8yOC8zMzI1MjgwMjY5
+). | Or unsubscribe from everything here (
+https://unsubscribe.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in
+). | 8067 Hudson Dr, San Diego, CA 92119 | swipefiles.com (
+https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/dpheh0h03=
+ql00dtm/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vbWVtYmVyc2hpcA=3D=3D
+)
+--341137214ea227f2acdb0ee0f7cd3ab5654987e912244be1f90291d54eaf
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html style=3D"font-family:Helvetica, Arial, sans-serif">
+<head style=3D"font-family:Helvetica, Arial, sans-serif">
+<!--[if mso]>
+  <center>
+  <table><tr><td width=3D"580">
+<![endif]-->
+<style style=3D"font-family:Helvetica, Arial, sans-serif">.ck-link { text-d=
+ecoration: underline; }</style>
+<style style=3D"font-family:Helvetica, Arial, sans-serif">@media only scree=
+n { .email * { word-break: break-word; } }
+@media screen and (max-width: 384px) { .mail-message-content { width: 414px=
+ !important; } }
+@media only screen and (max-width:600px) { .ck-mobile-font-size { font-size=
+:50px !important; }  }</style>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" st=
+yle=3D"font-family:Helvetica, Arial, sans-serif">
+<style>a:hover{color:#1b8ede;border-bottom-color:#1b8ede}
+.button:hover{color:#fff;background:#666}</style>
+</head>
+<body style=3D"font-family:Helvetica, Arial, sans-serif">
+<div class=3D"message-content" style=3D"font-size:18px;line-height:1.5em;co=
+lor:#333333;max-width:600px;margin:30px auto;font-family:Helvetica, Arial, =
+sans-serif">
+  <!--[if mso]><style>.button-table { padding: 12px 0 }</style><![endif]-->=
+<table cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family:Helvetica, =
+Arial, sans-serif;width:100%;margin:0 auto"><tbody style=3D"font-family:Hel=
+vetica, Arial, sans-serif"><tr style=3D"font-family:Helvetica, Arial, sans-=
+serif"><td style=3D"font-family:Helvetica, Arial, sans-serif">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"font-family:Helvetica, Arial, sans-serif;text-align:center;table-layou=
+t:fixed;float:none" class=3D"email-image"><tbody style=3D"font-family:Helve=
+tica, Arial, sans-serif"><tr style=3D"font-family:Helvetica, Arial, sans-se=
+rif"><td align=3D"center" style=3D"font-family:Helvetica, Arial, sans-serif=
+"><figure style=3D"font-family:Helvetica, Arial, sans-serif;margin-top:12px=
+;margin-bottom:12px;margin-left:0;margin-right:0;max-width:100px;width:100%=
+"><div style=3D"font-size:18px;line-height:1.5em;font-family:Helvetica, Ari=
+al, sans-serif;color:#333333;padding-bottom:10px;display:block"><img src=3D=
+"https://embed.filekitcdn.com/e/g9xF2Uoo3Jrg28hBueGo6c/uN41ZyocGzmTixiyn6JB=
+WC/email" width=3D"100" height=3D"auto" style=3D"font-family:Helvetica, Ari=
+al, sans-serif;max-width:100%;height:auto;margin:0 auto;border-radius:4px 4=
+px 4px 4px;width:100px;height:auto;object-fit:contain"></div></figure></td>=
+</tr></tbody></table>
+<p class=3D"" style=3D"font-size:18px;line-height:1.5em;font-family:Helveti=
+ca, Arial, sans-serif;color:#333333;margin-bottom:1em">You subscribed to <s=
+trong style=3D"font-family:Helvetica, Arial, sans-serif;color:inherit;font-=
+family:inherit;font-size:inherit">Swipe Files Newsletter</strong> based on =
+a recommendation from Frich. Thanks for joining!</p>
+<p class=3D"" style=3D"font-size:18px;line-height:1.5em;font-family:Helveti=
+ca, Arial, sans-serif;color:#333333;margin-bottom:1em">We won't email you u=
+nless you click<a href=3D"https://click.convertkit-mail.com/5quqxwzvvlu8uvp=
+zlnnb6h95qqv44in/9qhpxxp5snhp7gopp9f9/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vc=
+3Vic2NyaWJlZD9zcGFya2xvb3A=3D" trigger-id=3D"4933206" target=3D"_blank" cla=
+ss=3D"ck-link" rel=3D"noopener noreferrer" style=3D"font-family:Helvetica, =
+Arial, sans-serif;color:inherit;font-family:inherit;font-size:inherit;text-=
+decoration:none;border-bottom:1px dotted #0875c1;color:#0875c1" url-id=3D"1=
+714554059"> =E2=80=8Bthis button=E2=80=8B</a> and confirm:</p>
+<!--[if !mso]>--><table width=3D"100%" style=3D"font-family:Helvetica, Aria=
+l, sans-serif"><tbody style=3D"font-family:Helvetica, Arial, sans-serif"><t=
+r style=3D"font-family:Helvetica, Arial, sans-serif"><td align=3D"center" s=
+tyle=3D"font-family:Helvetica, Arial, sans-serif"><a class=3D"email-button"=
+ href=3D"https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/=
+9qhpxxp5snhp7gopp9f9/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vc3Vic2NyaWJlZD9zcG=
+Fya2xvb3A=3D" target=3D"_blank" rel=3D"noopener noreferrer" style=3D"font-f=
+amily:Helvetica, Arial, sans-serif;text-decoration:none;border-bottom:1px d=
+otted #0875c1;color:#0875c1;border-color:#ff715b;background-color:#ff715b;b=
+ox-sizing:border-box;border-style:solid;color:#ffffff;display:inline-block;=
+text-align:center;text-decoration:none;padding:18px 32px;margin-top:12px;ma=
+rgin-bottom:12px;font-size:24px;border-radius:4px 4px 4px 4px" trigger-id=
+=3D"4933206" url-id=3D"1714554059">Confirm Your Subscription</a></td></tr><=
+/tbody></table>
+<!--<![endif]--><!--[if mso]><table class=3D"button-table" width=3D"100%" b=
+order=3D"0" cellSpacing=3D"0" cellPadding=3D"0" style=3D"margin-top:12px;ma=
+rgin-bottom:12px"><tr><td align=3D"center"><table border=3D"0" cellSpacing=
+=3D"0" cellPadding=3D"0"><tr><td align=3D"center" bgcolor=3D"#ff715b" style=
+=3D"background-color:#ff715b;overflow:hidden;padding:18px 32px"><a class=3D=
+"email-button" href=3D"https://www.swipefiles.com/subscribed?sparkloop" tar=
+get=3D"_blank" rel=3D"noopener noreferrer" style=3D"background-color:inheri=
+t;display:inline-block;text-decoration:none;border-style:solid;margin:0;col=
+or:#ffffff;font-size:24px" trigger-id=3D"4933206" data-ck-element=3D"button=
+">Confirm Your Subscription</a></td></tr></table></td></tr></table><![endif=
+]--><p class=3D"" style=3D"font-size:18px;line-height:1.5em;font-family:Hel=
+vetica, Arial, sans-serif;color:#333333;margin-bottom:1em">We're excited to=
+ have you join the 25,000 SaaS founders and marketers receiving actionable =
+marketing advice.</p>
+<p class=3D"" style=3D"font-size:18px;line-height:1.5em;font-family:Helveti=
+ca, Arial, sans-serif;color:#333333;margin-bottom:1em">We just want to 100%=
+ ensure you want to receive our emails.</p>
+<p class=3D"" style=3D"font-size:18px;line-height:1.5em;font-family:Helveti=
+ca, Arial, sans-serif;color:#333333;margin-bottom:1em">=E2=80=94Corey Haine=
+s</p>
+</td></tr></tbody></table>
+
+  <div class=3D"footer" style=3D"font-size:18px;line-height:1.5em;color:#33=
+3333;border-top:1px dotted #888;padding:20px 0px;font-family:Helvetica, Ari=
+al, sans-serif;color:#aaa;font-size:12px;padding-bottom:10px">
+    If you don't want emails like this anymore, choose what you receive <a =
+href=3D"https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/m=
+2h7h5h8rod88whm/aHR0cHM6Ly9zbWFydHN1YnNjcmliZXIuYXBwL3NlbGVjdC8yOC8zMzI1Mjg=
+wMjY5" style=3D"font-family:Helvetica, Arial, sans-serif;text-decoration:no=
+ne;border-bottom:1px dotted #0875c1;color:#0875c1" url-id=3D"1714554060">he=
+re</a>. | Or unsubscribe from everything <a href=3D"https://unsubscribe.con=
+vertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in" style=3D"font-family:Helv=
+etica, Arial, sans-serif;text-decoration:none;border-bottom:1px dotted #087=
+5c1;color:#0875c1">here</a>. | 8067 Hudson Dr, San Diego, CA 92119 | <a hre=
+f=3D"https://click.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44in/dphe=
+h0h03ql00dtm/aHR0cHM6Ly93d3cuc3dpcGVmaWxlcy5jb20vbWVtYmVyc2hpcA=3D=3D" styl=
+e=3D"font-family:Helvetica, Arial, sans-serif;text-decoration:none;border-b=
+ottom:1px dotted #0875c1;color:#0875c1" url-id=3D"1714554061">swipefiles.co=
+m</a>
+   =20
+  </div>
+</div>
+<!--[if mso]>
+  </td></tr></table>
+  </center>
+<![endif]-->
+
+<!-- -->
+<img src=3D"https://open.convertkit-mail.com/5quqxwzvvlu8uvpzlnnb6h95qqv44i=
+n" alt=3D"" style=3D"font-family:Helvetica, Arial, sans-serif">
+</body>
+</html>
+
+--341137214ea227f2acdb0ee0f7cd3ab5654987e912244be1f90291d54eaf--
